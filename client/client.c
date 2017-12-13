@@ -51,7 +51,7 @@ int main(int argc, char *argv[]){
 	//for(int i = 0; i < 5; i++){
         strcpy(message,"");
 
-		printf("Enter the details(Enter <Acc No>,<Name>,<Operation>,<Balance>) seperated by comma\n");
+		printf("Enter the details(Enter <Acc No>,<Name>,<Balance>,<Operation>) seperated by comma\n");
 		scanf("%s",message);	
 		puts(message);
 		if(send(sock, message, strlen(message), 0) != strlen(message))
